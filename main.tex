@@ -96,7 +96,7 @@ as  buscas  desta  pesquisa. Apresentam-se também as palavras-chave utilizadas 
 As fontes selecionadas para realização deste trabalho foram pesquisadas nas bases eletrônicas de dados disponíveis no portal CAPES, incluindo documentos indexados nas seguintes bases:
 
  \begin{itemize}
-   \item  \textbf{ACM digital library}
+   \item  \textbf{Periódicos CAPES}
    \item  \textbf{IEEEXplore}
    \item  \textbf{Springer}
    \item  \textbf{Google Scholar}
@@ -115,9 +115,11 @@ As seguintes palavras foram utilizadas para fazer as buscas de estudos:
 Com o intuito de abordar as palavras chave anteriormente definidas, foram definidas as seguitnes strings de busca:
 
  \begin{itemize}
-   \item  \textbf{("deploy" or "deployment") AND  "agile" AND "process software" }
-    \item  \textbf{("deploy" or "deployment") AND  "agile" AND "continuous delivery"}
-    \item  \textbf{ "process" AND  "agile" AND  "deployment" AND "software"}
+  \item  \textbf{ "devops" AND  "agile" AND "software"}
+  \item  \textbf{"Agile Process Software Deployment"}
+  \item  \textbf{("deploy" OR "deployment") AND  "agile" AND "process" AND software" }
+   \item  \textbf{("deploy" OR "deployment") AND  "agile" AND "continuous delivery"}
+
  \end{itemize}
 
 É importante ressaltar que as strings de busca deverá na medida do possível ser igual em todas as máquinas de busca, contudo poderá existir adaptações mas levando em consideração que a string adaptada deverá ser logicamente equivalente a string original.
@@ -151,17 +153,35 @@ Após  esta leitura inicial ,  os  resultados que foram incluídos a partir dos 
 
 \section{Execução da Revisão Sistemática} \label{sec4}
 
+Para a execução da revisão sistemática foram realizados diversas consultas a base dados entre o período de  8/10/2015 a 8/11/2015 com as diferentes strings de busca citadas na seção \ref{sec3:subsec2} foram realizadas duas iterações para identificar os trabalhos relacionados de acordo com os critérios definidos na seção \ref{sec3:subsec4}.
+
 \subsection{Execução das Buscas} \label{sec4:subsec1}
 
+Dado a quantidade de palavras chave, foi nessesário testar algumas combinações possíveis para montar as strings de busca, foram levantadas algumas strings de busca iniciais que não foram suficientes como: "process" AND "deployment" que trazia várias abordagens que não seriam interessantes para este trabalho, com isso foram montadas operações boleanas com AND e OR para filtrar melhor os trabalhos relacionados.
+
+Após o refinamento das strings de busca, foram realizadas as buscas de acordo com as bases definidas na seção \ref{sec3:subsec3} e os seguintes resultados foram obtidos:
+
+ \begin{itemize}
+   \item  \textbf{Periódicos CAPES:} Foram encontrados 73 artigos, para refinar a busca dos periódicos encontrados na base foram removidos da busca os seguintes resultados: Improvement, Mathematical Models, Software Industry, Computing Milieux, Experiment/Theoretical Treatment, Studies.
+   \item  \textbf{IEEE explorer:} Utilizando as quatro strings de busca foram encontrados 76 artigos, sem remover artigos duplicados.
+   \item  \textbf{Springer:} Foram encontrados 247 artigos, aplicando os seguintes filtros: English, Computer Science, SWE and Article. Para diminuir a quantidade de artigos para serem analisados, também foi feito um filtro de datas, aplicando do ano de 2012 até o ano de 2015, e a quantidade final encontrada foi de 122 artigos.
+   \item  \textbf{Google Schoolar:} Vários resultados foram encontrados nessa busca, porém essa base será utilizada como base complementar.
+ \end{itemize}
+
 \subsection{Seleção Preliminar} \label{sec4:subsec2}
+
+Pelo tempo disponível para o desenvolvimento do trabalho, deu-se a necessidade de filtrar os artigos por data, ou seja, os mais novos foram vistos primeiro. No caso da quantidade encontrada em todas as bases e dado o tempo para o desenvolvimento do trabalho a primeira filtragem foi feita pelo título e pela própria descrição do artigo encontrado na busca.
+
+Após essa filtragem inicial os artigos escolhidos passaram pelos critérios definidos na seção \ref{sec3:subsec4}, tendo como análise seus títulos, resumos, introduções e conclusões, as discussões sobre os resultados obtidos nesta fase estão descritos na seção \ref{sec5}.
+
+Nessa  seleção  preliminar,  70%  dos  resultados  em  Inglês   foram  descartados,  já que  não  obedeciam  aos  critérios  de  inclusão  ou  fora m  excluídos  pelos  critérios  de
+exclusão, conforme identificado
 
 \subsection{Seleção Final} \label{sec4:subsec3}
 
 \section{Análise dos resultados} \label{sec5}
 
 \section{Conclusão} \label{sec6}
-
-\section{Figures and Captions}\label{sec:figs}
 
 \begin{table}[ht]
 \centering
@@ -176,3 +196,4 @@ Após  esta leitura inicial ,  os  resultados que foram incluídos a partir dos 
 \bibliography{sbc-template}
 
 \end{document}
+
