@@ -24,13 +24,13 @@
 
 \sloppy
 
-\title{Devops: Implantação ágil no desenvolvimento de software}
+\title{Implantação contínua: Implantação ágil no desenvolvimento de software}
 
-\author{Thiago S. F. Ribeiro\inst{1}}
+\author{Thiago  de Souza Fonseca Ribeiro\inst{1}}
 
 
 \address{UnB -- Universidade de Brasília -- Campus Gama -- FGA
-  \email{thiagovsk@aluno.unb.br thiagitosouza@gmail.com}
+  \email{thiagovsk@aluno.unb.br}
 }
 
 \begin{document}
@@ -75,15 +75,14 @@ resultados são analisados.
 
 \subsection{Objetivos} \label{sec3:subsec1}
 
-O objetivo deste trabalho....
+O objetivo deste trabalho foi identificar como é feito o processo de implantção de software em equipes de desenvolvimento que utilizam métodos ágeis, identificando quais os procedimentos e técnicas utilizadas nos trabalhos relacionados, a partir de publicações científicas ou estudos primários.
 
 \subsection{Questão de Pesquisa} \label{sec3:subsec2}
 
-A partir do objetivo estabelecido na Seção \ref{sec3:subsec1}, foram elaboradas as seguintes questões de pesquisa:
+A partir do objetivo estabelecido na Seção \ref{sec3:subsec1}, foi elaborada a seguinte questão de pesquisa:
 
  \begin{itemize}
-   \item  \textbf{H1: }
-   \item  \textbf{H2: }
+   \item  \textbf{Questão de Pesquisa: Quais são as formas de otimizar o processo de implantação de software utilizadas em equipes que trabalham utilizando métodos ágeis? }
  \end{itemize}
 
 Essas questões deverão ser respondidas ao final da revisão sistemática.
@@ -99,33 +98,28 @@ As fontes selecionadas para realização deste trabalho foram pesquisadas nas ba
    \item  \textbf{Periódicos CAPES}
    \item  \textbf{IEEEXplore}
    \item  \textbf{Springer}
-   \item  \textbf{Google Scholar}
  \end{itemize}
 
 As seguintes palavras foram utilizadas para fazer as buscas de estudos:
 
  \begin{itemize}
    \item  \textbf{Agile}
-   \item  \textbf{Deploy}
    \item  \textbf{Process Software Deployment}
    \item  \textbf{Devops}
    \item  \textbf{Continuous Delivery}
+   \item  \textbf{Continuous Deploy}
+
  \end{itemize}
 
 Com o intuito de abordar as palavras chave anteriormente definidas, foram definidas as seguitnes strings de busca:
 
  \begin{itemize}
-  \item  \textbf{ "devops" AND  "agile" AND "software"}
-  \item  \textbf{"Agile Process Software Deployment"}
-  \item  \textbf{("deploy" OR "deployment") AND  "agile" AND "process" AND software" }
-   \item  \textbf{("deploy" OR "deployment") AND  "agile" AND "continuous delivery"}
-
+   \item  \textbf{("deploy" OR "deployment") AND  "agile" AND "software" AND ("devops" OR "continuous delivery" OR "continuous deploy") }
  \end{itemize}
 
-É importante ressaltar que as strings de busca deverá na medida do possível ser igual em todas as máquinas de busca, contudo poderá existir adaptações mas levando em consideração que a string adaptada deverá ser logicamente equivalente a string original.
+É importante ressaltar que a strings de busca deverá na medida do possível ser igual em todas as máquinas de busca, contudo poderá existir adaptações mas levando em consideração que a string adaptada deverá ser logicamente equivalente a string original.
 
 O idioma escolhido foi o Inglês, também considerou-se qualquer tipo de trabalho ou artigo que fizesse abordagem sobre características de implantação de software no contexto de métodos ágeis.
-
 
 \subsection{Critérios de Seleção} \label{sec3:subsec4}
 
@@ -133,14 +127,21 @@ Após a realização das buscas, serão incluídos na revisão todos os artigos 
 
  \begin{itemize}
    \item  \textbf{Critério de inclusão:} O resultado deve estar no indoma inglês.
-   \item  \textbf{Critério de inclusão:}  O resultado deve estar disponível integralmente.
-   \item  \textbf{Critério de inclusão:}   O resultado deve conter no título, ou resumo, ou conclusão,  informações relevantes sobre o tema desse trabalho.
+   \item  \textbf{Critério de inclusão:} O resultado deve estar disponível integralmente.
+   \item  \textbf{Critério de inclusão:} O resultado deve conter no título, ou resumo, ou conclusão,  informações relevantes sobre o tema desse trabalho.
  \end{itemize}
 
  Após a realização das buscas, serão excluídos na revisão todos os artigos que satisfaçam todos os seguintes critérios de inclusão:
 
  \begin{itemize}
    \item  \textbf{Critério de exclusão:} O resultado não trata do contexto de implantação e desenvolvimento de software.
+ \end{itemize}
+
+Para avaliar a qualidade dods estudos foi levado em consideraçãoos seguintes aspectos:
+
+ \begin{itemize}
+   \item  \textbf{O trabalho deve ser interessante para o estudo} Esse aspecto condiz com a idéia de que os trabalhos encontrados devem estar de acordo com trabalhos conhecidos ou em publicações de artigos bem avaliados pelo qualis da CAPES.
+   \item  \textbf{O trabalho deve conter evidências importantes para a pesquisa} É importante que o trabalho encontrado tenha evidências que possam ajudar na revisão sistemática, trabalhos que forem encontrados dentro da pesquisa pela string de busca mas que não condizem com o escopo do trabalho serão descartdos.
  \end{itemize}
 
 \subsection{Procedimentos Para Extração de Dados} \label{sec3:subsec5}
@@ -157,29 +158,35 @@ Para a execução da revisão sistemática foram realizados diversas consultas a
 
 \subsection{Execução das Buscas} \label{sec4:subsec1}
 
-Dado a quantidade de palavras chave, foi nessesário testar algumas combinações possíveis para montar as strings de busca, foram levantadas algumas strings de busca iniciais que não foram suficientes como: "process" AND "deployment" que trazia várias abordagens que não seriam interessantes para este trabalho, com isso foram montadas operações boleanas com AND e OR para filtrar melhor os trabalhos relacionados.
+Dado a quantidade de palavras chave, foi nessesário testar algumas combinações possíveis para montar as strings de busca, foram levantadas algumas strings de busca iniciais que não foram suficientes como: "agile process software deployment" que trazia várias abordagens que não seriam interessantes para este trabalho, com isso foram montadas operações boleanas com AND e OR para filtrar melhor os trabalhos relacionados. Outra evolução da string de busca foi de acordo com a percepção de outros termos que são utilizados nos trabalhos sobre métodos ágeis que são por exemplo : Devops, Continuous Integration, Continuous Delivery e Continuous Deploy, esse aprendizado serviu para refinar a string de busca, também percebeu-se que a palavra "process" anteriormente inserida como um AND na busca diminuia a quantidade de resultados relevantes.
 
-Após o refinamento das strings de busca, foram realizadas as buscas de acordo com as bases definidas na seção \ref{sec3:subsec3} e os seguintes resultados foram obtidos:
+\subsection{Seleção Preliminar} \label{sec4:subsec2}
+Após o refinamento das strings de busca, foram realizadas as buscas de acordo com as bases definidas na seção \ref{sec3:subsec3}, algumas ferramentas dificultavam o uso da string de busca, como solução paliativa a ação tomada foi quebrar a string de busca nas operações OR e AND para conseguir um resultado melhor. Os seguintes resultados foram obtidos:
 
  \begin{itemize}
-   \item  \textbf{Periódicos CAPES:} Foram encontrados 73 artigos, para refinar a busca dos periódicos encontrados na base foram removidos da busca os seguintes resultados: Improvement, Mathematical Models, Software Industry, Computing Milieux, Experiment/Theoretical Treatment, Studies.
-   \item  \textbf{IEEE explorer:} Utilizando as quatro strings de busca foram encontrados 76 artigos, sem remover artigos duplicados.
-   \item  \textbf{Springer:} Foram encontrados 247 artigos, aplicando os seguintes filtros: English, Computer Science, SWE and Article. Para diminuir a quantidade de artigos para serem analisados, também foi feito um filtro de datas, aplicando do ano de 2012 até o ano de 2015, e a quantidade final encontrada foi de 122 artigos.
+   \item  \textbf{Periódicos CAPES:} Foram encontrados ao total 58 artigos, para refinar a busca dos periódicos encontrados na base foram removidos da busca os seguintes resultados: Activities , Comprehension, Self, Domains, Communications, Environments, Improvement. Neste primeiro momento também não foram removidos os artigos duplicados na busca.
+   \item  \textbf{IEEE explorer:} Utilizando a string de busca foram encontrados 62 artigos, sem remover artigos duplicados.
+   \item  \textbf{Springer:} Foram encontrados 169 artigos, aplicando os seguintes filtros: English, Computer Science, SWE and Article. Para diminuir a quantidade de artigos para serem analisados, também foi feito um filtro de datas, aplicando do ano de 2010 até o ano de 2015, e a quantidade final encontrada foi de 110 artigos.
    \item  \textbf{Google Schoolar:} Vários resultados foram encontrados nessa busca, porém essa base será utilizada como base complementar.
  \end{itemize}
 
-\subsection{Seleção Preliminar} \label{sec4:subsec2}
-
-Pelo tempo disponível para o desenvolvimento do trabalho, deu-se a necessidade de filtrar os artigos por data, ou seja, os mais novos foram vistos primeiro. No caso da quantidade encontrada em todas as bases e dado o tempo para o desenvolvimento do trabalho a primeira filtragem foi feita pelo título e pela própria descrição do artigo encontrado na busca.
-
-Após essa filtragem inicial os artigos escolhidos passaram pelos critérios definidos na seção \ref{sec3:subsec4}, tendo como análise seus títulos, resumos, introduções e conclusões, as discussões sobre os resultados obtidos nesta fase estão descritos na seção \ref{sec5}.
-
-Nessa  seleção  preliminar,  70%  dos  resultados  em  Inglês   foram  descartados,  já que  não  obedeciam  aos  critérios  de  inclusão  ou  fora m  excluídos  pelos  critérios  de
-exclusão, conforme identificado
-
 \subsection{Seleção Final} \label{sec4:subsec3}
 
+Pelo tempo disponível para o desenvolvimento do trabalho, deu-se a necessidade de filtrar os artigos por data, ou seja, os mais novos foram vistos primeiro. No caso da grande quantidade encontrada em todas as bases e dado o tempo para o desenvolvimento do trabalho a primeira filtragem foi feita pelo título e pela própria descrição do artigo encontrado na busca.
+
+Após essa filtragem inicial os artigos escolhidos passaram pelos critérios definidos na seção \ref{sec3:subsec4}, tendo como análise seus títulos, resumos, introduções e conclusões, as discussões sobre os resultados obtidos nesta fase estão descritos na seção \ref{sec5}, além disso também foram removidos os artigos duplicados, totalizando :
+
+\begin{itemize}
+  \item \textbf{CAPES:} 3 artigos
+    \item \textbf{IEEE:} 12 artigos
+    \item \textbf{SPRINGER:} 2 artigos
+\end{itemize}
+
 \section{Análise dos resultados} \label{sec5}
+
+Nesta  seção,  as  publicações  selecionadas  foram  analisadas  levando  em  consideração  o
+objetivo deste trabalho, buscando responder as questão de pesquisa definida
+
 
 \section{Conclusão} \label{sec6}
 
@@ -189,6 +196,18 @@ exclusão, conforme identificado
   techniques}
 \label{tab:exTable1}
 \includegraphics[width=.7\textwidth]{table.jpg}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lllll}
+teste & teste & teste & teste & teste \\
+a     & b     & c     & d     & e     \\
+f     & g     & h     & i     &       \\
+      &       &       &       &
+\end{tabular}
 \end{table}
 
 \section{References}
