@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX:
+% How to use writeLaTeX: 
 %
 % You edit the source code here on the left, and the preview on the
 % right shows you the result within a few seconds.
@@ -18,10 +18,10 @@
 
 \usepackage{graphicx,url}
 
-%\usepackage[brazil]{babel}
-\usepackage[utf8]{inputenc}
+%\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}  
 
-
+     
 \sloppy
 
 \title{Implantação ágil no desenvolvimento de software, uma revisão sistemática}
@@ -33,44 +33,36 @@
   \email{thiagovsk@aluno.unb.br}
 }
 
-\begin{document}
+\begin{document} 
 
 \maketitle
 
 \begin{abstract}
-  This meta-paper describes the style to be used in articles and short papers
-  for SBC conferences. For papers in English, you should add just an abstract
-  while for the papers in Portuguese, we also ask for an abstract in
-  Portuguese (``resumo''). In both cases, abstracts should not have more than
-  10 lines and must be in the first page of the paper.
+Agile methods have brought a major evolution in software development, the software is being delivered faster and with better quality but software only offers value to customers when they are deployed and available in production to provide the necessary functionality to the end user thereby the continued deployment accelerates the deployment process of existing Agile methods such as Scrum and Extreme Programming (XP) by automatically deploying software. The objective of this work is to identify and understand what is continuous deployment of software and a development team can improve your software deployment process. We conducted a systematic review to find the main practices and techniques being used in addition to the advantages of using the continuous deployment within the software development cycle. With the result were identified the main procedures and practices We utilize as well as activities and steps so that a development team can improve your software deployment process. It is recommended that despite the challenge of making the process more agile and continuous deployment advantages that the continuous settlement offers can be a differentiator in software development, with benefits ranging from the time savings in development to improve the interaction with the end user.
 \end{abstract}
+     
+\begin{resumo} 
 
-\begin{resumo}
-  Este meta-artigo descreve o estilo a ser usado na confecção de artigos e
-  resumos de artigos para publicação nos anais das conferências organizadas
-  pela SBC. É solicitada a escrita de resumo e abstract apenas para os artigos
-  escritos em português. Artigos em inglês deverão apresentar apenas abstract.
-  Nos dois casos, o autor deve tomar cuidado para que o resumo (e o abstract)
-  não ultrapassem 10 linhas cada, sendo que ambos devem estar na primeira
-  página do artigos.
+Os métodos ágeis trouxeram uma grande evolução no desenvolvimento de software, o software está sendo entregue de forma mais rápida e com mais qualidade, porém software só oferece valor para os clientes quando eles estão implantados e disponíveis em produção para proporcionar as funcionalidades necessárias ao usuário final, com isso a implantação contínua acelera o processo de implantação dos métodos ágeis existentes, como Scrum e programação extrema (XP) através da implantação automática de software. O objetivo deste trabalho é identificar e entender o que é implantação contínua de software e como uma equipe de desenvolvimento pode melhorar seu processo de implantação de software. Realizou-se uma revisão sistemática para encontrar as principais práticas e técnicas que estão sendo utilizadas, além das vantagens de utilizar a implantação contínua dentro do ciclo de desenvolvimento de software. Com o resultado foram identificados os principais procedimentos e práticas utilizadas além de atividades e etapas para que uma equipe de desenvolvimento possa melhorar o seu processo de implantação de software. Recomenda-se que a apesar do desafio de tornar o processo de implantação mais ágil e contínuo as vantagens que a implantação contínua oferece pode ser um diferencial no desenvolvimento de software, com benefícios que vão desde o ganho de tempo no desenvolvimento até a melhoria da interação com o usuário final.
 \end{resumo}
 
+\textbf{Palavras chave:} Devops, implantação contínua, métodos ágeis, implantação ágil.
 \section{Introdução}\label{sec1}
 
 Os métodos ágeis de desenvolvimento de software têm sido
 cada vez mais adotados em todo o mundo e se tornaram uma das correntes no desenvolvimento de software como um todo. Os métodos ágeis também tiveram um impacto sobre a educação em engenharia de software nas universidades que começaram a adaptar os seus cursos para acomodar esta nova forma de desenvolvimento de software. \cite{brazil}.
 
-O desenvolvimento de software de forma ágil e traz como necessidade se adapatar a mudanças do mercado e as necessidades do cliente, com a pressão de colocar um produto no mercado no menor espaço de tempo possível, pois um atraso pode acarretar na perda de clientes ao disponibilizar novas funcionalidades de um software. Para resolver esta situação, práticas ágeis têm aumentado a capacidade em que as empresas têm de desenvolvimento de software, e que assim consigam lidar com a complexa mudança de requisitos e a grande variedade das necessidades do mercado \cite{dzamashvili2010impact}.
+O desenvolvimento de software de forma ágil e traz como necessidade se adaptar a mudanças do mercado e as necessidades do cliente, com a pressão de colocar um produto no mercado no menor espaço de tempo possível, pois um atraso pode acarretar em perda de clientes ao disponibilizar novas funcionalidades de um software. Para resolver esta situação, práticas ágeis têm aumentado a capacidade em que as empresas têm de desenvolvimento de software, e que assim consigam lidar com a complexa mudança de requisitos e a grande variedade das necessidades do mercado \cite{dzamashvili2010impact}.
 
-Entretando software só oferece valor para os clientes quando eles estão implantados em produção e que possam proporcionar as funcionalidades para o usuário final. \cite{6612879} Com isso, a implantação de um software não pode ser um processo lento, já que quanto mais rápido o software é disponibilizado para os seus usuários mais rápido a equipe de desenvolvimento consegue colher o feedback desses usuários.
+Entretanto software só oferece valor para os clientes quando eles estão implantados em produção e que possam proporcionar as funcionalidades para o usuário final. \cite{6612879} Com isso, a implantação de um software não pode ser um processo lento, já que quanto mais rápido o software é disponibilizado para os seus usuários mais rápido a equipe de desenvolvimento consegue colher o feedback desses usuários. 
 
 Com a popularização do desenvolvimento ágil, bem com o acesso barato a recursos de hardware como virtualização e computação em nuvem, contribuiram para a evolução do processo de entrega de software, tornando mais rápido e acessível para as empresas a lançarem seu software continuamente \cite{6612879}.
 
 De acordo com \cite{6449236} a escolha da metodologia de desenvolvimento pode impactar no tempo de entrega de um software, um exemplo de comparação é feito com as metodologias e o próprio facebook:
 
 \begin{itemize}
-  \item \textbf{Waterfall ou Processo Cascata:} Uma única bez
-    \item \textbf{Desenvolvimento Evolutivo:} EM meses
+	\item \textbf{Waterfall ou Processo Cascata:} Uma única bez
+   	\item \textbf{Desenvolvimento Evolutivo:} EM meses
     \item \textbf{Desenvolvimento ágil:} Em semanas
     \item \textbf{Facebook:} Em dias
     \item \textbf{Implantação contínua:} Em horas
@@ -79,17 +71,17 @@ De acordo com \cite{6449236} a escolha da metodologia de desenvolvimento pode im
 
 No contexto do modelo cascata, o objetivo final é entregar o produto de software no fim do projeto, dentro do contexto de desenvolvimento ágil ou sistemas evolutivos tais como Linux, as entregas são periódicas \cite{6612879}. Mas as práticas que as empresas de Internet usam é conhecido como implantação contínua, isso vêm da necessidade de colher o rapidamente  o feedback do usuário final, e isso reflete o hábito de implantar um novo código com uma série de pequenas alterações no momento em que ele está pronto.
 
-Contudo,enquanto métodos e práticas ágeis são atraentes para muitos software nas empresas de desenvolvimento, existem poucas empresas (por exemplo, Facebook, IBM, Adobe e Microsoft que tiveram sucesso na implementação de práticas ágeis para implantação contínua de software. \cite{Claps201521}. Porém de acordo com \cite{6265084} a complexidade dos sistemas voltado para a Internet têm aumentado,no passado a maioria das aplicações de softwares eram pequenas aplicações simples que podem ser instalados numa ambiente padrão básico, porém atualmente os sistemas voltado para a internet consistem em várias aplicações que precisam ser integradas, o que torna o processo de implantção cada vez mais complexo. \cite{6265084}
+Contudo, enquanto métodos e práticas ágeis são atraentes para muitos software nas empresas de desenvolvimento, existem poucas empresas (por exemplo, Facebook, IBM, Adobe e Microsoft que tiveram sucesso na implementação de práticas ágeis para implantação contínua de software. \cite{Claps201521}. Porém de acordo com \cite{6265084} a complexidade dos sistemas voltados para a Internet têm aumentado, no passado a maioria das aplicações de softwares eram pequenas aplicações simples que podem ser instalados numa ambiente padrão básico, porém atualmente os sistemas voltado para a internet consistem em várias aplicações que precisam ser integradas, o que torna o processo de implantação cada vez mais complexo. \cite{6265084}
 
-A forma como as empresas devem entregar software vai por meio de uma onda de mudanças, necessidades do mercado estão mudando continuamente, as tecnologias estão mudando rapidamente, existe mais pressão para se adaptar ao mercado e a necessidade de entregar rapidamente devido a competitividade do mercado. As empresas não podem já não se dar ao luxo de deixar o cliente à espera de 6 meses ou 1 ano para o lançamento de uma nova versão e, em seguida, solicitar feedback de cliente sobre como software se comporta. Os clientes esperam que o desenvolvimento seja contínuo de modo que eles podem fornecer um feedback rápido.
+A forma como as empresas devem entregar software vai por meio de uma onda de mudanças, necessidades do mercado estão mudando continuamente, as tecnologias estão mudando rapidamente, existe mais pressão para se adaptar ao mercado e a necessidade de entregar rapidamente devido a competitividade do mercado. As empresas não podem já não se dar ao luxo de deixar o cliente à espera de 6 meses ou 1 ano para o lançamento de uma nova versão e, em seguida, solicitar feedback de cliente sobre como software se comporta. Os clientes esperam que o desenvolvimento seja contínuo de modo que eles podem fornecer um feedback rápido. 
 
-A fim de enfrentar os desafios de hoje, as empresas precisam ser  ágeis em todas as fases de ciclo de vida de desenvolvimento de um software. Ao longo dos anos as organizações adotaram muitos processos otimizações em seu desenvolvimento ágil. No entanto,nessa evolução tem sido deixando de lado a operações de entrega de software \cite{7173368}. Com isso surge um movimento dentro do desenvolvimento ágil de software conhecido com implantação contínua de software, que propõe evoluir o processo de entrega de software, tornando-o mais rápido e objetivo.
+A fim de enfrentar os desafios de hoje, as empresas precisam ser  ágeis em todas as fases de ciclo de vida de desenvolvimento de um software. Ao longo dos anos as organizações adotaram muitos processos otimizações em seu desenvolvimento ágil. No entanto, nessa evolução tem sido deixando de lado a operações de entrega de software \cite{7173368}. Com isso surge um movimento dentro do desenvolvimento ágil de software conhecido com implantação contínua de software, que propõe evoluir o processo de entrega de software, tornando-o mais rápido e objetivo.
 
 \section{Implantação Contínua de Software} \label{sec2}
 
 Implantação contínua de software é um processo de engenharia de software que foca na entrega rápida de mudanças de software para os usuários finais\cite{7284592}, e neste processo gradual as alterações no software são automaticamente testadas, e frequentemente enviadas para ambientes de teste e produção.
 
-Implantação contínua também tem importantes benefícios do ponto de vista de produção de software. Implantações freqüentes implica que cada implantação introduz apenas uma quantidade limitada de novo código. Isto reduz (mas não elimina) o risco de que algo vai dar errado \cite{6449236}. A capacidade para implantar código rapidamente e em pequenos incrementos sem medo permite uma rápida inovação. Outro benefício das implantações pequenas e rápidas  é que podemos facilmente identificar a origem de bugs: eles são mais prováveveis de aparecer nas mudanças mais recentes, e sua implementação ainda está fresca na mente dos engenheiros.
+Implantação contínua também tem importantes benefícios do ponto de vista de produção de software. Implantações frequentes implica que cada implantação introduz apenas uma quantidade limitada de novo código. Isto reduz (mas não elimina) o risco de que algo vai dar errado \cite{6449236}. A capacidade para implantar código rapidamente e em pequenos incrementos sem medo permite uma rápida inovação. Outro benefício das implantações pequenas e rápidas  é que podemos facilmente identificar a origem de bugs: eles são mais prováveveis de aparecer nas mudanças mais recentes, e sua implementação ainda está fresca na mente dos engenheiros. 
 
 As empresas de software que estão usando a implantação contínua
 relataram vários benefícios deste processo de software, tais como
@@ -98,16 +90,18 @@ e economias no esforço de desenvolvimento \cite{7057604}. Apesar de ser um proc
 compreensão de implantação contínua sendo ela um grande desafio. Grandes empresas estão usando implantação contínua para implantar o seu produto \cite{7284592} como por exemplo:
 
 \begin{itemize}
-  \item Facebook
-    \item Google
-  \item Github
-    \item Amazon
-    \item Facebook
+	\item Facebook
+  	\item Google
+	\item Github
+  	\item Amazon
+  	\item Facebook
 \end{itemize}
+
+Este artigo está organizado em seções, na \ref{sec1} uma introdução baseada na implantação de software, na \ref{sec2} apresenta-se uma visão geral sobre Devops e as práticas ágeis para implantação de software, na \ref{sec3} apresenta-se os aspectos relativos ao planejamento da revisão sistemática, na seção \ref{sec4} a execução da revisão sistemática, na seção \ref{sec5} a análise dos resultados encontrados e por fim na seção \ref{sec6} as considerações finais.
 
 \subsection{Devops} \label{sec2:sub1}
 
-Um dos problemas encontrados nas empresas é que depois que os desenvolvedores terminavam as funcionalidades, o código era entregue a uma equipe de implantação, que ficaria responsável por implantar aquele código nos servidores de teste e produção, e muitas vezes essa equipe não tinha conhecimento das implementações e isso poderia acarretar em problemas e atraso na implantação. Com isso nasceu o DevOps que é uma peça fundamental de otimização da entrega de software. Opiniões têm mostrado que, em maioria das organizações operações lado de entrega é significativa contribuinte para o atraso na entrega de software. DevOps recomenda automatizar a implantação de software e provisionamento de hardware. \cite{7173368}
+Um dos problemas encontrados nas empresas é que depois que os desenvolvedores terminavam as funcionalidades, o código era entregue a uma equipe de implantação, que ficaria responsável por implantar aquele código nos servidores de teste e produção, e muitas vezes essa equipe não tinha conhecimento das implementações e isso poderia acarretar em problemas e atraso na implantação. Com isso nasceu o DevOps que é uma peça fundamental de otimização da entrega de software. Opiniões têm mostrado que, na maioria das organizações as atividades de implantação contribuem no atraso da entrega de software, por isso DevOps recomenda automatizar a implantação de software e provisionamento de hardware para minimizar esse atraso. \cite{7173368}
 
 DevOps é um conjunto de princípios para a entrega de software onde foco é a velocidade de entrega, teste contínuo , feedback contínuo e a capacidade de reagir a mudam mais rapidamente \cite{7173368}. DevOps estende os princípios ágeis para todo o funil da entrega de entrega de software, onde o time de desenvolvimento entrega várias construções com funcionalidades novas enquanto a equipe de operações organiza nas implantações.
 
@@ -119,9 +113,9 @@ DevOps é um conjunto de princípios para a entrega de software onde foco é a v
 \end{figure}
 
 DevOps também é um conjunto de práticas que defendem a colaboração entre desenvolvedores de software e operações de TI onde o objetivo é
-encurtar o ciclo de feedback, e isso se encaixa dentro de contexto de implantação contínua. Conforme Huttermann \cite{httermann2012devops}, DevOps enfatiza a capacitação de pessoas mais do que processos, também a necessidade de automação no desenvolvimento de novo software, que institui medidas de qualidade e criar uma cultura de partilha de conhecimento entre as pessoas.A comunidade DevOps defende a comunicação entre a equipe de operações e a equipe de desenvolvimento como um meio de assegurar que o os desenvolvedores entenderem os problemas associados com as operações. Um dos principais benefícios da DevOps é a capacidade de quantificar aspectos do desenvolvimento, isto é, levar à melhoria do desenvolvimento do produto, devido à um foco mais nítido em agilidade das entregas.
+encurtar o ciclo de feedback, e isso se encaixa dentro de contexto de implantação contínua. Conforme Huttermann \cite{httermann2012devops}, DevOps enfatiza a capacitação de pessoas mais do que processos, também a necessidade de automação no desenvolvimento de novo software, que institui medidas de qualidade e criar uma cultura de partilha de conhecimento entre as pessoas. A comunidade DevOps defende a comunicação entre a equipe de operações e a equipe de desenvolvimento como um meio de assegurar que o os desenvolvedores entenderem os problemas associados com as operações. Um dos principais benefícios da DevOps é a capacidade de quantificar aspectos do desenvolvimento, isto é, levar à melhoria do desenvolvimento do produto, devido à um foco mais nítido em agilidade das entregas.
 
-Quando as equipes de desenvolvimento e operações passam a trabalhar juntos em uma so equipe DevOps, os desenvolvedores compreendem a dificuldade de implantação de softwre quando não existe uma certa cadência no desenvolvimento, com isso a equipe de DevOps deve coordenar tais atividades através de vários processos de desenvolvimento ágil como implantação contínua e testes automatizados \cite{6265084}.
+Quando as equipes de desenvolvimento e operações passam a trabalhar juntos em uma só equipe DevOps, os desenvolvedores compreendem a dificuldade de implantação de software quando não existe uma certa cadência no desenvolvimento, com isso a equipe de DevOps deve coordenar tais atividades através de vários processos de desenvolvimento ágil como implantação contínua e testes automatizados \cite{6265084}. 
 
 Um grande facilitador do DevOps são as ferramentas de gerenciamento de configuração. Tais ferramentas permitem controlar e automatizar a configuração de todos os elementos que compõem uma aplicação, são elas: softwares previamente instalados, usuários, serviços em execução, arquivos de configuração,tarefas programadas, configurações de rede, armazenamento, monitoramento e segurança. \cite{6265084}. Existem também Ferramentas populares como Puppet e Chef, e sua função principal é automatizar a configuração de um sistema. É possível escrever algumas regras que expressam como um código de software deve ser configurado, e a ferramenta irá configurar o sistema em conformidade com o que foi escrito. Você pode usar o tais  ferramentas para configurar um novo sistema para adicionar novas funcionalidades ou até mesmo para reparar um sistema.
 
@@ -141,7 +135,7 @@ resultados são analisados.
 
 \subsection{Objetivos} \label{sec3:subsec1}
 
-O objetivo deste trabalho foi identificar como é feito o processo de implantção de software em equipes de desenvolvimento que utilizam métodos ágeis, identificando quais os procedimentos e técnicas utilizadas nos trabalhos relacionados, a partir de publicações científicas ou estudos primários.
+O objetivo deste trabalho foi identificar como é feito o processo de implantação de software em equipes de desenvolvimento que utilizam métodos ágeis, identificando quais os procedimentos e técnicas utilizadas nos trabalhos relacionados, a partir de publicações científicas ou estudos primários.
 
 \subsection{Questão de Pesquisa} \label{sec3:subsec2}
 
@@ -156,7 +150,7 @@ Essas questões deverão ser respondidas ao final da revisão sistemática.
 \subsection{Métodos de Busca de Publicações} \label{sec3:subsec3}
 
 Esta  Subseção  descreve  onde  e  como  foram  realizadas
-as  buscas  desta  pesquisa. Apresentam-se também as palavras-chave utilizadas para a geração da string  de busca e os idiomas aceitos para a seleção dos resultados.
+as  buscas  desta  pesquisa. Apresentam-se também as palavras-chave utilizadas para a geração da string  de busca e os idiomas aceitos para a seleção dos resultados. 
 
 As fontes selecionadas para realização deste trabalho foram pesquisadas nas bases eletrônicas de dados disponíveis no portal CAPES, incluindo documentos indexados nas seguintes bases:
 
@@ -165,7 +159,7 @@ As fontes selecionadas para realização deste trabalho foram pesquisadas nas ba
    \item  \textbf{IEEEXplore}
    \item  \textbf{Springer}
  \end{itemize}
-
+ 
 As seguintes palavras foram utilizadas para fazer as buscas de estudos:
 
  \begin{itemize}
@@ -174,7 +168,7 @@ As seguintes palavras foram utilizadas para fazer as buscas de estudos:
    \item  \textbf{Devops}
    \item  \textbf{Continuous Delivery}
    \item  \textbf{Continuous Deploy}
-
+   
  \end{itemize}
 
 Com o intuito de abordar as palavras chave anteriormente definidas, foram definidas as seguitnes strings de busca:
@@ -186,33 +180,33 @@ Com o intuito de abordar as palavras chave anteriormente definidas, foram defini
 É importante ressaltar que a strings de busca deverá na medida do possível ser igual em todas as máquinas de busca, contudo poderá existir adaptações mas levando em consideração que a string adaptada deverá ser logicamente equivalente a string original.
 
 O idioma escolhido foi o Inglês, também considerou-se qualquer tipo de trabalho ou artigo que fizesse abordagem sobre características de implantação de software no contexto de métodos ágeis.
-
+   
 \subsection{Critérios de Seleção} \label{sec3:subsec4}
 
 Após a realização das buscas, serão incluídos na revisão todos os artigos encontrados com a utilização do método descrito na subseção \ref{sec3:subsec5} que satisfaçam todos os seguintes critérios de inclusão:
 
  \begin{itemize}
-   \item  \textbf{Critério de inclusão:} O resultado deve estar no indoma inglês.
-   \item  \textbf{Critério de inclusão:} O resultado deve estar disponível integralmente.
+   \item  \textbf{Critério de inclusão:} O resultado deve estar no indioma inglês.
+   \item  \textbf{Critério de inclusão:} O resultado deve estar disponível integralmente.    
    \item  \textbf{Critério de inclusão:} O resultado deve conter no título, ou resumo, ou conclusão,  informações relevantes sobre o tema desse trabalho.
  \end{itemize}
-
+ 
  Após a realização das buscas, serão excluídos na revisão todos os artigos que satisfaçam todos os seguintes critérios de inclusão:
 
  \begin{itemize}
    \item  \textbf{Critério de exclusão:} O resultado não trata do contexto de implantação e desenvolvimento de software.
  \end{itemize}
-
-Para avaliar a qualidade dods estudos foi levado em consideraçãoos seguintes aspectos:
+ 
+Para avaliar a qualidade dods estudos foi levado em consideração os seguintes aspectos:
 
  \begin{itemize}
    \item  \textbf{O trabalho deve ser interessante para o estudo} Esse aspecto condiz com a idéia de que os trabalhos encontrados devem estar de acordo com trabalhos conhecidos ou em publicações de artigos bem avaliados pelo qualis da CAPES.
-   \item  \textbf{O trabalho deve conter evidências importantes para a pesquisa} É importante que o trabalho encontrado tenha evidências que possam ajudar na revisão sistemática, trabalhos que forem encontrados dentro da pesquisa pela string de busca mas que não condizem com o escopo do trabalho serão descartdos.
+   \item  \textbf{O trabalho deve conter evidências importantes para a pesquisa} É importante que o trabalho encontrado tenha evidências que possam ajudar na revisão sistemática, trabalhos que forem encontrados dentro da pesquisa pela string de busca mas que não condizem com o escopo do trabalho serão descartados.
  \end{itemize}
-
+ 
 \subsection{Procedimentos Para Extração de Dados} \label{sec3:subsec5}
 
-Foi realizado uma busca em inglês em cada uma das fontes definidas na seção \ref{sec3:subsec3}, utilizando as strings de busca definidas na seção \ref{sec3:subsec3}, a partir da busca foram lidos todos os títulos, ou resumos, ou conclusões dos artigos encontrados. Isso foi necessário para saber quantos passaram pelos critérios de inclusão e quais não foram de acordo com os critérios de exclusão, citados na seção \ref{sec3:subsec4}, ou seja, aqueles trabalhos que os resultado não continham relevância no título, ou resumo, ou conclusão foram exluídos.
+Foi realizado uma busca em inglês em cada uma das fontes definidas na seção \ref{sec3:subsec3}, utilizando as strings de busca definidas na seção \ref{sec3:subsec3}, a partir da busca foram lidos todos os títulos, ou resumos, ou conclusões dos artigos encontrados. Isso foi necessário para saber quantos passaram pelos critérios de inclusão e quais não foram de acordo com os critérios de exclusão, citados na seção \ref{sec3:subsec4}, ou seja, aqueles trabalhos que os resultado não continham relevância no título, ou resumo, ou conclusão foram excluídos.
 
 \subsection{Extração de Resultados} \label{sec3:subsec6}
 
@@ -224,7 +218,7 @@ Para a execução da revisão sistemática foram realizados diversas consultas a
 
 \subsection{Execução das Buscas} \label{sec4:subsec1}
 
-Dado a quantidade de palavras chave, foi nessesário testar algumas combinações possíveis para montar as strings de busca, foram levantadas algumas strings de busca iniciais que não foram suficientes como: "agile process software deployment" que trazia várias abordagens que não seriam interessantes para este trabalho, com isso foram montadas operações boleanas com AND e OR para filtrar melhor os trabalhos relacionados. Outra evolução da string de busca foi de acordo com a percepção de outros termos que são utilizados nos trabalhos sobre métodos ágeis que são por exemplo : Devops, Continuous Integration, Continuous Delivery e Continuous Deploy, esse aprendizado serviu para refinar a string de busca, também percebeu-se que a palavra "process" anteriormente inserida como um AND na busca diminuia a quantidade de resultados relevantes.
+Dado a quantidade de palavras chave, foi necessário testar algumas combinações possíveis para montar as strings de busca, foram levantadas algumas strings de busca iniciais que não foram suficientes como: "agile process software deployment" que trazia várias abordagens que não seriam interessantes para este trabalho, com isso foram montadas operações boleanas com AND e OR para filtrar melhor os trabalhos relacionados. Outra evolução da string de busca foi de acordo com a percepção de outros termos que são utilizados nos trabalhos sobre métodos ágeis que são por exemplo : Devops, Continuous Integration, Continuous Delivery e Continuous Deploy, esse aprendizado serviu para refinar a string de busca, também percebeu-se que a palavra "process" anteriormente inserida como um AND na busca diminuia a quantidade de resultados relevantes.
 
 \subsection{Seleção Preliminar} \label{sec4:subsec2}
 Após o refinamento das strings de busca, foram realizadas as buscas de acordo com as bases definidas na seção \ref{sec3:subsec3}, algumas ferramentas dificultavam o uso da string de busca, como solução paliativa a ação tomada foi quebrar a string de busca nas operações OR e AND para conseguir um resultado melhor. Os seguintes resultados foram obtidos:
@@ -243,55 +237,202 @@ Pelo tempo disponível para o desenvolvimento do trabalho, deu-se a necessidade 
 Após essa filtragem inicial os artigos escolhidos passaram pelos critérios definidos na seção \ref{sec3:subsec4}, tendo como análise seus títulos, resumos, introduções e conclusões, as discussões sobre os resultados obtidos nesta fase estão descritos na seção \ref{sec5}, além disso também foram removidos os artigos duplicados, totalizando :
 
 \begin{itemize}
-  \item \textbf{CAPES:} 3 artigos
-    \item \textbf{IEEE:} 7 artigos
-    \item \textbf{SPRINGER:} 2 artigos
+	\item \textbf{CAPES:} 3 artigos
+  	\item \textbf{IEEE:} 7 artigos
+   	\item \textbf{SPRINGER:} 2 artigos
 \end{itemize}
 
 \section{Análise dos resultados} \label{sec5}
 
-Nesta  seção,  as  publicações  selecionadas  foram  analisadas  levando  em  consideração  o
+Nesta  seção,  as  publicações  selecionadas  foram  analisadas  levando  em  consideração  o 
 objetivo deste trabalho, buscando responder as questão de pesquisa definida. A lista a seguir mostra os artigos selecionados que foram analisados, contendo respectivamente o trabalho, o autor e o ano:
 
 \begin{enumerate}
   \item CAPES
-    \begin{enumerate}
-      \item \textbf{On the journey to continuous deployment: Technical and socialchallenges along the way.}  Gerry Gerard Claps , Richard Berntsson Svensson, Aybüke Aurum. 2015
-      \item \textbf{Strengths and barriers behind the successful agile deployment insights from the three software intensivecompanies in Finland} Minna Pikkarainen, Outi Salo, Raija Kuusela, Pekka Abrahamsson. 2011
+  	\begin{enumerate}
+    	\item \textbf{On the journey to continuous deployment: Technical and socialchallenges along the way.}  Gerry Gerard Claps , Richard Berntsson Svensson, Aybüke Aurum. 2015 
+    	\item \textbf{Strengths and barriers behind the successful agile deployment insights from the three software intensivecompanies in Finland} Minna Pikkarainen, Outi Salo, Raija Kuusela, Pekka Abrahamsson. 2011
         \item \textbf{An Agile process model for product derivation in software productline engineering} Padraig O’Leary, Fergal McCaffery Steffen Thiel, Ita Richardson. 2010
-    \end{enumerate}
+  	\end{enumerate}
   \item SPRINGER
-    \begin{enumerate}
-      \item \textbf{Fostering effective inter-team knowledge sharing in agile software development} Viviane Santos, Alfredo Goldman ,Cleidson R. B. de Souza.  2014
-      \item \textbf{The evolution of agile software development in Brazil} Claudia de O. Melo, Viviane Santos, Eduardo Katayama, Hugo Corbucci, Rafael Prikladnicki, Alfredo Goldman, Fabio Kon.  2013
-    \end{enumerate}
+  	\begin{enumerate}
+    	\item \textbf{Fostering effective inter-team knowledge sharing in agile software development} Viviane Santos, Alfredo Goldman ,Cleidson R. B. de Souza.  2014
+    	\item \textbf{The evolution of agile software development in Brazil} Claudia de O. Melo, Viviane Santos, Eduardo Katayama, Hugo Corbucci, Rafael Prikladnicki, Alfredo Goldman, Fabio Kon.  2013
+  	\end{enumerate}
   \item IEEE
-    \begin{enumerate}
-      \item \textbf{Software Deployment Activities and Challenges –A Case Study of Four Software Product Companies} Mika V. Mäntylä, Jari Vanhanen. 2011
-      \item \textbf{Don’t Install Softwareby Hand} Diomidis Spinellis. 2012
-      \item \textbf{Development and Deployment at Facebook } Dror G. Feitelson, Eitan Frachtenberg, Kent L. Beck.  2013
-      \item \textbf{SYSTEM DYNAMICS MODELING OFAGILE CONTINUOUS DELIVERYPROCESS} Olumide Akerele, Muthu Ramachandran, Mark Dixon. 2013
-      \item \textbf{Continuous Delivery? Easy! Just Change Everything(well, maybe it is not that easy)} Steve Neely, Steve Stolt.  2013
-      \item \textbf{Understanding DevOps, Bridging the gap from Continuous Integration to Continuous Delivery} Manish Virmani.  2015
-      \item \textbf{Synthesizing Continuous Deployment Practices Usedin Software Development} Akond Ashfaque Ur Rahman, Eric Helms, Laurie Williams, chris Parnin. 2015
-  \end{enumerate}
+  	\begin{enumerate}
+    	\item \textbf{Software Deployment Activities and Challenges –A Case Study of Four Software Product Companies} Mika V. Mäntylä, Jari Vanhanen. 2011
+    	\item \textbf{Don’t Install Softwareby Hand} Diomidis Spinellis. 2012
+    	\item \textbf{Development and Deployment at Facebook } Dror G. Feitelson, Eitan Frachtenberg, Kent L. Beck.  2013
+    	\item \textbf{SYSTEM DYNAMICS MODELING OFAGILE CONTINUOUS DELIVERYPROCESS} Olumide Akerele, Muthu Ramachandran, Mark Dixon. 2013
+    	\item \textbf{Continuous Delivery? Easy! Just Change Everything(well, maybe it is not that easy)} Steve Neely, Steve Stolt.  2013 
+    	\item \textbf{Understanding DevOps, Bridging the gap from Continuous Integration to Continuous Delivery} Manish Virmani.  2015
+    	\item \textbf{Synthesizing Continuous Deployment Practices Usedin Software Development} Akond Ashfaque Ur Rahman, Eric Helms, Laurie Williams, chris Parnin. 2015
+	\end{enumerate}
 \end{enumerate}
 
 Essas publicações servem como insumo para responder a questão de pesquisa na subseção \ref{sec5:subsec1}.
 
 \subsection{Quais são as formas de otimizar o processo de implantação de software utilizadas em equipes que trabalham utilizando métodos ágeis?} \label{sec5:subsec1}
 
+Uma maneira de entender quais são as formas de otimizar o processo de implantação de software é aprender sobre as práticas e técnicas utilizadas pelas empresas que desenvolvem software e implementam a implantação contínua, como explicado em  \cite{7284592} os profissionais preferem aprender através das experiências de outros profissionais de software que pertencem à mesma indústria. Logo esse estudo pode se beneficiar de uma revisão sistemática que mapeia as práticas de software e as empresas de software que estão usando essas práticas na implantação contínua.
+
+Em \cite{6449236} é relatado como o facebook usa a implantação contínua de software, um fator importante citado é que o tem cerca de 1.000 engenheiros desenvolvendo em paralelo e seu repositório recebe atualizações diárias com novos códigos, e cita como o processo de enviar o código para uma equipe separada de qualidade atrasa na implantação do software. No facebook não não existe uma equipe de qualidade, o que contrasta com a maioria das empresas tradicionais de software, onde os engenheiros desenvolvem o código, podem também escrever e executar alguns testes, mas, em seguida, enviam o código para a equipe de qualidade. De acordo com \cite{6449236} esta separação conduz a vários problemas, incluindo o tempo que testadores levam para aprender o código.
+
+No Facebook, os engenheiros escrevem todos os tipos de testes para seu código novo, além disso o código deve passar por uma bateria de  testes de regressão, que são parte processo, ou seja, quando um engenheiro envia código novo, esse seu código passará por uma bateria de testes de forma automática. Neste processo também é importante que a equipe de engenheiros possua uma comunicação mínima, para que caso testes falhem possam discutir o problema, no caso do facebook eles utilizam uma ferramenta de chat chamada IRC.
+
+O devops também é utilizado no facebook, onde os desenvolvedores também devem apoiar a equipe operacional, o que motiva a escrever um bom código e testá-lo completamente. A participação pessoal dos desenvolvedores em manter o sistema funcionando sem problemas até o momento da implantação complementa os procedimentos de engenharia e permite que o sistema mantenha a qualidade em grande escala. Porém as metodologias e ferramentas não são suficientes, pois elas pode ser mal utilizadas. Assim, uma cultura de responsabilidade pessoal é importante.
+
+Em \cite{6612887} cita como é feito o seu processo de implantação contínua, eles utilizam ferramentas como Jenkins para a implantação contínua, o servidor que roda o Jenkis iria pegar a mudança no código de repositório, executar os testes de integração e implantar o o código novo um servidor de teste. Eles também possuem  um sistema de monitoramento no servidor de teste para assegurar que o serviço foi executado. Para a implantação em produção, eles possuem um sistema de  implantação baseado na linguagem Ruby que executa automaticamente o código para produção.
+
+No estudo feito por \cite{Claps201521} diz que para implementar um processo de implantação contínua de software, vários passos precisam ser tomados, enquanto implantação contínua de software pode criar novas oportunidades de negócios, implantação contínua também apresenta novos desafios, permitindo que os desenvolvedores de software possam implantar frequentemente e, assim, entregar software funcionando mais rápido. Com isso, é possível encontrar atividades recorrentes dentro de uma implantação, como:
+
+\begin{itemize}
+  	\item \textbf{Atividades de preparação de instalação:} Atividades que devem ser feita antes de uma
+instalação, preparando o ambiente em que a aplicação será instalada, ex: instalar um compilador, um banco de dados, um servidor de aplicação.
+	\item \textbf{Atividades de instalação:} Atividades de instalação estão diretamente relacionados com a instalação do
+produto para o cliente
+   	\item \textbf{Atividades de testes:} Atividades de teste que se referem a implantação.
+    \item \textbf{Atividades de comunicação}Voltadas aos usuários finais como: informar o conteúdo atualizado 
+\end{itemize}
 
 
-\section{Conclusão} \label{sec6}
+Porém se você quiser que o processo de implantação libere o código frequentemente é necessário remover
+etapas manuais, para isso \cite{6612887} tráz algumas etapas sobre como começar:
 
-\begin{table}[ht]
-\centering
-\caption{Variables to be considered on the evaluation of interaction
-  techniques}
-\label{tab:exTable1}
-\includegraphics[width=.7\textwidth]{table.jpg}
-\end{table}
+
+A. Engenharia
+
+Comece por retirar todas as etapas manuais em seu processo de implantação de produção. Para fazer isso você deve identificar o que seu processo é, executar um mapeamento do fluxo, onde uma equipe escreve os passos do desenvolvimento para a implantação. Os resultados podem ser surpreendentes, portanto depois de documentar seus processos tente identificar o mais lento que use etapas manuais e depois tente automatizar esta etapa removendo a parte manual do processo.
+
+
+B. Invista em seus testes
+
+Os testes automatizados da aplicação devem ser executados de forma rápida, sólida e confiável. Se seu
+conjunto de testes leva nove horas para ser executado, o mais rápido que você conseguirá implantar um software  é nove horas. Um ciclo de feedback lento, que leva horas é doloroso, frustrante e facilmente ignorado. Se a sua suíte de testes é muito lenta você deve corrigir, uma forma de corrigir isso é paralelizar a execução dos testes.
+
+C. O negócio
+
+A comunicação com a equipe de negócios deve ser amplamente evoluída, pois con a implantação contínua aumenta a liberação de recursos de vendas e marketing, assim com a comunicação em dia dará as datas exatas em que
+a equipe de marketing precisa para se comunicar com os clientes.
+
+Para facilitar a implantação contínua dentro da sua equipe, \cite{7284592} diz que existem práticas comuns nas empresas que utilizam implantação contínua, são elas:
+
+A. Usar repositório de código
+
+Utilizar ferramentas como git, para ajudar no desenvolvimento colaborativo.
+
+B. Deploy Automático
+
+A implantação automatizada refere-se à prática de fazer
+software disponível para os usuários finais automaticamente; esta prática é
+conduzida entre e software de aquisição de software
+execução sem esforço manual, para isso é importante utilizar ferramentas para automatizar a implantação como por exemplo: jenkins, chef, puppet.
+
+C. Suite de testes automatizadas
+
+Teste automatizado refere-se à prática de executar várias atividades de testes de forma automatizada, testes como:
+
+\begin{itemize}
+	\item Testes unitários
+    \item Testes de integração
+    \item Testes A/B
+	\item Testes funcionais
+    \item Testes de aceitação
+    \item Testes de regressão
+\end{itemize}
+
+D. Revisão de código
+
+A revisão de código é a prática que exige que os desenvolvedores apresentam alterações de software para comentário e aprovação de desenvolvedores mais experientes. Os Benefícios da realização de revisão do código sobre as mudanças de software incluem detecção de defeitos, a troca de conhecimentos entre
+os membros da equipe de software e refatoração de código. Algumas ferramentas auxiliam no processo como github, gitlab.
+
+
+E. Monitoramento de desempenho
+
+O monitoramento é a prática da coleta de informações da implantação realizada, produzindo indicadores de desempenho adequados, e reportar tais indicadores caso sejam inapropriados. É interessante neste caso monitorar rede e servidor, existem várias ferramentas automatizadas como Nagios, Splunk, etc.
+
+F. Comunicação com usuários finais
+	
+A comunicação com os usuários finais é de extrema importância, dado que ele é quem vai validar as novas entregas, e colher o seu feedback é essencial. Ferramentas simples podem resolver esse problema como: emails, manuais e fóruns.
+
+
+Pode-se resumir essas práticas a práticas DevOps que podem ser aplicadas diversas vezes dentro de um ciclo de desenvolvimento de software, as práticas DevOps podem ser resumidas em:
+
+A. Planejamento Contínuo
+
+Planos de negócios tem que ser ágil , ou seja, capaz de se adaptar rapidamente ao
+mudanças nas condições de mercado.  É difícil para as equipes de desenvolvimento / teste
+adaptar-se às rápidas mudanças no mundo dos negócios
+ambientes. DevOps permite que você faça isso por
+sempre ter um product backlog priorizado,
+canal contínuo do feedback com os clientes
+e capacidade de priorizar o product backlog todo o
+tempo, levando diretamente a parte de negócios em
+consideração.
+
+B. Integração Contínua
+
+A integração contínua basicamente refere-se a integrar
+cedo, não manter as alterações localizadas no seu
+espaço de trabalho por muito tempo, em vez disso compartilhar suas alterações
+com a equipe e validar como o código se comporta
+continuamente. Além disso, este estágio de
+otimização de processos refere-se a alcançar
+automação de tal modo que, logo que desenvolvedor envia código novo a integração contínua
+realiza uma bateria de testes gerando uma nova construção. Isto tem de ser um processo contínuo em todo o ciclo de desenvolvimento.
+
+C. Implantação Contínua
+
+Este é o coração de DevOps e constitui a peça fundamental
+de otimização de entrega de software. Configurar um servidor e instalar um software em produção leva tempo, se for de forma manual então esse tempo pode ser de dias a semanas, por isso estes processos de implantação manual não é consistente. Os princípios de DevOps recomendam automatizar a implantação do software e o provisionamento de hardware entre os vários prestadores de serviços na nuvem, que desempenham um papel crucial neste campo, fornecendo hardware de forma rápida e eficiente.
+
+
+D. Teste Contínuo
+
+Automatize cada caso de teste! Qualquer processo que tem que ser repetida ao longo do tempo  deve se automatizado. Processo de teste manual devem ser avaliados para
+possibilidades de automatização e na maioria dos casos
+haverá formas de automatizar o mesmo. Assim facilitando a execução de testes ao fim do desenvolvimento de uma nova funcionalidade, podendo também integrar a uma ferramenta de integração contínua.
+
+
+E- Monitoração Contínua
+
+Com a capacidade de testar cedo e em uma produção como
+sistema, há uma oportunidade de observar vários
+parâmetros de qualidade, portanto, capacidade de
+reagir a quaisquer surpresas em tempo hábil.
+
+
+Os benefícios que possam vir são vários, e podem resolver parte de um problema maior, sem a necessidade de implantar todos os conceitos estudados. É interessante avaliar quais são as maiores necessidades no momento, automatizar os testes seria a prioridade? Ou uma ferramenta para automatizar a implantação? Depende de cada equipe, porém uma das vantages da implantação contínua é que ela tráz vários aspectos que podem ser implantados separadamente para que a equipe de desenvolvimento possa ir experimentando cada prática aos poucos. Outros benefícios são:
+
+• Economia de tempo: tempo para executar testes, tempo para implantar software novo e tempo para descobrir bugs.
+
+• Implantação torna-se processo um processo natural.
+
+• Modelo de implantação contínua permite  a validação em um ambiente similar à produção, pode ser chamado de ambiente de testes ou homologação, com o processo de implantação totalmente automatizado a criação desses ambientes idênticos ao de produção se torna ráída e eficiente.
+
+• Economia de custos.
+
+• Implantações frequentes implica que cada implantação introduz apenas uma quantidade limitada de novo código. Isto reduz o risco de que algo vai dar errado.
+
+• Todo novo código inserido é testado.
+
+• Feedback rápido e contínuo, o cliente recebe mais cedo e traz suas impressões mais cedo evitando uma perda de tempo da equipe de desenvolvimento, no caso em que no feedback do cliente seja pedido mudanças. 
+
+• Reduzir o tempo de mercado, lançando funcionalidades novas em menos tempo.
+
+• Aumentar a organização e a eficiência como um todo.
+
+
+Além de outros benefícios que podem ser descobertos, dependendo da equipe de desenvolvimento e do processo de implantação adotado pela equipe.
+
+\section{Considerações Finais} \label{sec6}
+
+O conceito de administração contínua é fácil de entender, mas sua implementação pode exigir que você mude tudo. Comece por entender todo o seu processo, não apenas os requisitos técnicos em engenharia, mas também suas vendas, Marketing, Apoio, Gerentes Técnicos, usuários. Todo mundo vai ser afetado, por isso o processo de implantação deve ser transparente e claramente comunicado.
+
+Quando você tem uma compreensão completa do seu processo de implantação a equipe de começar a automatizar as partes mais lentas do mesmo. Estes são normalmente os passos manuais, que são as mais propensas a erro. Investir pesadamente em sua suíte de testes automatizados, fazer testes rápido, confiável e acessível. É importante também ter confiança, pois não é gratuito e não é fácil, mas a viagem em direção a entrega contínua resultará em uma melhoria na implantação de software.
+
+Hoje, o software é desenvolvido de forma rápida, e as mudanças no mercado são imprevisíveis, e vimos que a implantação contínua pode ajudar a resolver esse problema, mas é importante que as organizações estejam bem preparadas para lidar com as dificuldades técnicas da implantação contínua, com seus desafios, processos e ferramentas existentes e também saber como lidar com os benefícios que  uma organização pode ganhar quando  possui a adoção do processo de implantação contínua que fornece um nível de consciência que eles possivelmente antes não teriam.
 
 
 \section{References}
@@ -299,4 +440,3 @@ Essas publicações servem como insumo para responder a questão de pesquisa na 
 \bibliography{sbc-template}
 
 \end{document}
-
